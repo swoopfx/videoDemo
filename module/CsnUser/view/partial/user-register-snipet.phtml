@@ -1,0 +1,84 @@
+<?php
+$form = $this->form;
+
+?>
+
+<div>
+         
+            <?php
+            $element = $form->get('username');
+            // echo $this->formlabel($element);
+            echo $this->formElement($element);
+            ?>
+              <div style="font-size: 9px; color: red;">
+              <?php
+            echo $this->formElementErrors($element);
+            ?>
+              </div>
+</div>
+
+
+
+<div>
+            <?php
+            $element = $form->get('email')
+            ->setLabel('Email');
+            // echo $this->formlabel($element);
+            echo $this->formElement($element);
+            ?>
+              <div style="font-size: 9px; color: red;">
+              <?php
+            echo $this->formElementErrors($element);
+            ?>
+              </div>
+</div>
+
+<div>
+                <?php
+                $element = $form->get('password')->setLabel('Password');
+                // echo $this->formlabel($element);
+                echo $this->formPassword($element);
+                ?>
+              <div style="font-size: 9px; color: red;">
+              <?php
+            echo $this->formElementErrors($element);
+            ?>
+              </div>
+</div>
+<div>
+                <?php
+                $element = $form->get('passwordVerify')->setLabel('Verify Password');
+                // echo $this->formlabel($element);
+                echo $this->formPassword($element);
+                ?>
+              <div style="font-size: 9px; color: red;">
+              <?php
+            echo $this->formElementErrors($element);
+            ?>
+              </div>
+</div>
+<div>
+                <?php
+                $element = $form->get('question')->setLabel('Question');
+                // echo $this->formlabel($element);
+                echo $this->formElement($element);
+                ?>
+              <div style="font-size: 9px; color: red;">
+              <?php
+            echo $this->formElementErrors($element);
+            ?>
+              </div>
+</div>
+<br>
+<div>
+                <?php
+                $element = $form->get('answer')->setLabel('Answer');
+                // echo $this->formlabel($element);
+                echo $this->formElement($element);
+                ?>
+              <div style="font-size: 9px; color: red;">
+              <?php
+            echo $this->formElementErrors($element);
+            ?>
+              </div>
+</div>

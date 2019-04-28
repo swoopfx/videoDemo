@@ -1,0 +1,38 @@
+/**
+ * CsnUser - Coolcsn Zend Framework 2 User Module
+ * 
+ * @link https://github.com/coolcsn/CsnUser for the canonical source repository
+ * @copyright Copyright (c) 2005-2013 LightSoft 2005 Ltd. Bulgaria
+ * @license https://github.com/coolcsn/CsnUser/blob/master/LICENSE BSDLicense
+ * @author Stoyan Cheresharov <stoyan@coolcsn.com>
+ * @author Svetoslav Chonkov <svetoslav.chonkov@gmail.com>
+ * @author Nikola Vasilev <niko7vasilev@gmail.com>
+ * @author Stoyan Revov <st.revov@gmail.com>
+ * @author Martin Briglia <martin@mgscreativa.com>
+ */
+
+/*
+ *CsnUser Styles
+ */
+.form .form-control {
+	margin-bottom: 10px;
+}
+
+table.users-list td, table.users-list th {
+	text-align: center;
+}
+
+table.users-list a.name {
+	color: #3389D1;
+	font-size: 14px;
+	font-weight: 600;
+	margin: 15px 0 0;
+}
+
+table.users-list span.subtext {
+	color: #778391;
+	font-size: 12px;
+	font-style: italic;
+	margin-left: 0;
+	margin-top: 0;
+}

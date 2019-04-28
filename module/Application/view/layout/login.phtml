@@ -1,0 +1,79 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('Video '. $this->translate('Demo'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php echo $this->headMeta()
+            ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.png'))
+        ->prependStylesheet($this->basePath('vendor/owl-carousel/owl.theme.css'))
+                        ->prependStylesheet($this->basePath('vendor/owl-carousel/owl.carousel.css'))
+                        ->prependStylesheet($this->basePath('css/osahan.css'))
+                        ->prependStylesheet($this->basePath('vendor/fontawesome-free/css/all.min.css'))
+                        ->prependStylesheet($this->basePath('vendor/bootstrap/css/bootstrap.min.css')) ?>
+
+        <!-- Scripts -->
+        <?php
+//         echo $this->headScript()
+//             ->prependFile($this->basePath('js/custom.js'))
+//             ->prependFile($this->basePath('vendor/owl-carousel/owl.carousel.js'))
+//             ->prependFile($this->basePath('vendor/jquery-easing/jquery.easing.min.js'))
+//             ->prependFile($this->basePath('vendor/bootstrap/js/bootstrap.bundle.min.js'))
+//             ->prependFile($this->basePath('vendor/jquery/jquery.min.js'))
+        ; ?>
+
+    </head>
+   <body class="login-main-body">
+        <section class="login-main-wrapper">
+         <div class="container-fluid pl-0 pr-0">
+            <div class="row no-gutters">
+               <?php echo $this->content ;?>
+               <div class="col-md-7">
+                  <div class="login-main-right bg-white p-5 mt-5 mb-5">
+                     <div class="owl-carousel owl-carousel-login">
+                        <div class="item">
+                           <div class="carousel-login-card text-center">
+                              <img src="img/login.png" class="img-fluid" alt="LOGO">
+                              <h5 class="mt-5 mb-3">​Watch videos offline</h5>
+                              <p class="mb-4">when an unknown printer took a galley of type and scrambled<br> it to make a type specimen book. It has survived not <br>only five centuries</p>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="carousel-login-card text-center">
+                              <img src="img/login.png" class="img-fluid" alt="LOGO">
+                              <h5 class="mt-5 mb-3">Download videos effortlessly</h5>
+                              <p class="mb-4">when an unknown printer took a galley of type and scrambled<br> it to make a type specimen book. It has survived not <br>only five centuries</p>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="carousel-login-card text-center">
+                              <img src="img/login.png" class="img-fluid" alt="LOGO">
+                              <h5 class="mt-5 mb-3">Create GIFs</h5>
+                              <p class="mb-4">when an unknown printer took a galley of type and scrambled<br> it to make a type specimen book. It has survived not <br>only five centuries</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+        
+        <!-- Bootstrap core JavaScript-->
+      <script src="/vendor/jquery/jquery.min.js"></script>
+      <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Core plugin JavaScript-->
+      <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+      <!-- Owl Carousel -->
+      <script src="/vendor/owl-carousel/owl.carousel.js"></script>
+      <!-- Custom scripts for all pages-->
+      <script src="/js/custom.js"></script>
+        <?php echo $this->inlineScript() ?>
+    </body>
+</html>
