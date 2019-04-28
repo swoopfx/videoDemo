@@ -79,7 +79,7 @@ class Video
     
     /**
      * @ORM\ManyToOne(targetEntity="CsnUser\Entity\User", inversedBy="video")
-     * @var U
+     * @var 
      */
     private $user;
 
